@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component name="dataSourceStorage">
+  <data-source name="MySQL - ERP_CHIRI@localhost" uuid="dfb89a75-1a14-4a0d-9347-9142a702e15d">
+    <database-info product="MySQL" version="5.7.13-0ubuntu0.16.04.2" jdbc-version="4.0" driver-name="MySQL Connector Java" driver-version="mysql-connector-java-5.1.35 ( Revision: 5fb9c5849535c13917c2cf9baaece6ef9693ef27 )">
+      <extra-name-characters>#@</extra-name-characters>
+      <identifier-quote-string>`</identifier-quote-string>
+    </database-info>
+    <case-sensitivity plain-identifiers="exact" quoted-identifiers="exact"/>
+    <database-model serializer="dbm" rdbms="MYSQL" format-version="2.6">
+      <schema id="1" name="ERP_CHIRI">
+        <visible>1</visible>
+      </schema>
+      <schema id="2" name="CHAT_ROOM_NAMESPACE"/>
+      <schema id="3" name="information_schema"/>
+      <schema id="4" name="mysql"/>
+      <schema id="5" name="performance_schema"/>
+      <schema id="6" name="SPIDER"/>
+      <schema id="7" name="sys"/>
+      <table id="8" parent="1" name="CUSTOMER"/>
+      <table id="9" parent="1" name="EMPLOYEE"/>
+      <table id="10" parent="1" name="PRODUCT"/>
+      <table id="11" parent="1" name="RECEIPT"/>
+      <table id="12" parent="1" name="RECEIPT_DETAIL"/>
+      <column id="13" parent="8" name="CustomerNo">
+        <mandatory>1</mandatory>
+        <data-type>int(11)|0</data-type>
+      </column>
+      <column id="14" parent="8" name="StatusCode">
+        <data-type>char(1)|0</data-type>
+      </column>
+      <column id="15" parent="8" name="Gender">
+        <data-type>char(1)|0</data-type>
+      </column>
+      <column id="16" parent="8" name="FirstName">
+        <data-type>varchar(40)|0</data-type>
+      </column>
+      <column id="17" parent="8" name="LastName">
+        <data-type>varchar(40)|0</data-type>
+      </column>
+      <column id="18" parent="8" name="email">
+        <data-type>varchar(100)|0</data-type>
+      </column>
+      <column id="19" parent="8" name="CreationDate">
+        <data-type>datetime|0</data-type>
+      </column>
+      <column id="20" parent="8" name="CreatedBy">
+        <data-type>varchar(20)|0</data-type>
+      </column>
+      <key id="21" parent="8" name="PRIMARY">
+        <columns>CustomerNo</columns>
+        <primary>1</primary>
+      </key>
+      <column id="22" parent="9" name="EmployeeId">
+        <mandatory>1</mandatory>
+        <data-type>int(11)|0</data-type>
+      </column>
+      <column id="23" parent="9" name="FirstName">
+        <data-type>varchar(40)|0</data-type>
+      </column>
+      <column id="24" parent="9" name="LastName">
+        <data-type>varchar(40)|0</data-type>
+      </column>
+      <column id="25" parent="9" name="Phone">
+        <data-type>varchar(20)|0</data-type>
+      </column>
+      <column id="26" parent="9" name="Address">
+        <data-type>varchar(100)|0</data-type>
+      </column>
+      <column id="27" parent="9" name="City">
+        <data-type>varchar(30)|0</data-type>
+      </column>
+      <column id="28" parent="9" name="FullName">
+        <data-type>varchar(100)|0</data-type>
+      </column>
+      <column id="29" parent="9" name="Email">
+        <data-type>varchar(100)|0</data-type>
+      </column>
+      <column id="30" parent="9" name="Pin">
+        <data-type>varchar(100)|0</data-type>
+      </column>
+      <column id="31" parent="9" name="CreationDate">
+        <data-type>datetime|0</data-type>
+      </column>
+      <key id="32" parent="9" name="PRIMARY">
+        <columns>EmployeeId</columns>
+        <primary>1</primary>
+      </key>
+      <column id="33" parent="10" name="SKU">
+        <mandatory>1</mandatory>
+        <data-type>int(11)|0</data-type>
+      </column>
+      <column id="34" parent="10" name="StatusCode">
+        <data-type>char(1)|0</data-type>
+      </column>
+      <column id="35" parent="10" name="Cost">
+        <data-type>decimal(18,5)|0</data-type>
+      </column>
+      <column id="36" parent="10" name="CreatingDate">
+        <data-type>datetime|0</data-type>
+      </column>
+      <column id="37" parent="10" name="CreatedBy">
+        <data-type>varchar(20)|0</data-type>
+      </column>
+      <column id="38" parent="10" name="FirstPrice">
+        <data-type>decimal(18,5)|0</data-type>
+      </column>
+      <column id="39" parent="10" name="RetailPrice">
+        <data-type>decimal(18,6)|0</data-type>
+      </column>
+      <key id="40" parent="10" name="PRIMARY">
+        <columns>SKU</columns>
+        <primary>1</primary>
+      </key>
+      <column id="41" parent="11" name="ReceiptId">
+        <mandatory>1</mandatory>
+        <data-type>int(11)|0</data-type>
+      </column>
+      <column id="42" parent="11" name="ReceiptNo">
+        <mandatory>1</mandatory>
+        <data-type>int(11)|0</data-type>
+      </column>
+      <column id="43" parent="11" name="SalesDate">
+        <mandatory>1</mandatory>
+        <data-type>datetime|0</data-type>
+      </column>
+      <column id="44" parent="11" name="CustomerNo">
+        <mandatory>1</mandatory>
+        <data-type>int(11)|0</data-type>
+      </column>
+      <column id="45" parent="11" name="SubTotal">
+        <mandatory>1</mandatory>
+        <data-type>decimal(18,5)|0</data-type>
+      </column>
+      <column id="46" parent="11" name="SubTotalWithTax">
+        <mandatory>1</mandatory>
+        <data-type>decimal(18,5)|0</data-type>
+      </column>
+      <column id="47" parent="11" name="AmountTotal">
+        <mandatory>1</mandatory>
+        <data-type>decimal(18,5)|0</data-type>
+      </column>
+      <index id="48" parent="11" name="FKRECEIPT10000">
+        <columns>CustomerNo</columns>
+        <desc-columns></desc-columns>
+      </index>
+      <key id="49" parent="11" name="PRIMARY">
+        <columns>ReceiptId</columns>
+        <primary>1</primary>
+      </key>
+      <foreign-key id="50" parent="11" name="FKRECEIPT10000">
+        <columns>CustomerNo</columns>
+        <ref-key>~.CUSTOMER.PRIMARY</ref-key>
+        <cascade-update-rule>restrict</cascade-update-rule>
+        <cascade-delete-rule>restrict</cascade-delete-rule>
+      </foreign-key>
+      <column id="51" parent="12" name="ReceiptId">
+        <mandatory>1</mandatory>
+        <data-type>int(11)|0</data-type>
+      </column>
+      <column id="52" parent="12" name="LineNo">
+        <mandatory>1</mandatory>
+        <data-type>smallint(6)|0</data-type>
+      </column>
+      <column id="53" parent="12" name="CustomerNo">
+        <data-type>int(11)|0</data-type>
+      </column>
+      <column id="54" parent="12" name="SalesDate">
+        <mandatory>1</mandatory>
+        <data-type>datetime|0</data-type>
+      </column>
+      <column id="55" parent="12" name="SKU">
+        <mandatory>1</mandatory>
+        <data-type>int(11)|0</data-type>
+      </column>
+      <column id="56" parent="12" name="Qty">
+        <mandatory>1</mandatory>
+        <data-type>decimal(18,5)|0</data-type>
+      </column>
+      <column id="57" parent="12" name="Clerk">
+        <mandatory>1</mandatory>
+        <data-type>varchar(10)|0</data-type>
+      </column>
+      <column id="58" parent="12" name="RetailPriceWTax">
+        <mandatory>1</mandatory>
+        <data-type>decimal(18,5)|0</data-type>
+      </column>
+      <column id="59" parent="12" name="ExtRetailPriceWTax">
+        <mandatory>1</mandatory>
+        <data-type>decimal(18,5)|0</data-type>
+      </column>
+      <column id="60" parent="12" name="TaxPercent">
+        <data-type>decimal(19,4)|0</data-type>
+      </column>
+      <column id="61" parent="12" name="TaxAMount">
+        <data-type>decimal(18,5)|0</data-type>
+      </column>
+      <column id="62" parent="12" name="LineDescription">
+        <data-type>varchar(100)|0</data-type>
+      </column>
+      <index id="63" parent="12" name="FKRECEIPT_DETAIL10000">
+        <columns>SKU</columns>
+        <desc-columns></desc-columns>
+      </index>
+      <key id="64" parent="12" name="PRIMARY">
+        <columns>ReceiptId</columns>
+        <primary>1</primary>
+      </key>
+      <foreign-key id="65" parent="12" name="FKRECEIPT_DETAIL10000">
+        <columns>SKU</columns>
+        <ref-key>~.PRODUCT.PRIMARY</ref-key>
+        <cascade-update-rule>restrict</cascade-update-rule>
+        <cascade-delete-rule>restrict</cascade-delete-rule>
+      </foreign-key>
+    </database-model>
+  </data-source>
+</component>
