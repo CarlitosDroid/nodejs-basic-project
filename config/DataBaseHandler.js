@@ -1,7 +1,7 @@
 /**
  * Created by Carlos Leonardo Camilo Vargas HUuamán on 11/20/16.
  */
-/////EDITHHHHHHHH
+/////EDITHHHHHHHH  yyyyyy   >( adasd
 var mysql = require("mysql");
 
 function DataBaseHandler() {
